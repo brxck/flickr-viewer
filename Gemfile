@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use Slim views
 gem 'slim-rails'
+# Flickr API
+gem 'flickraw'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

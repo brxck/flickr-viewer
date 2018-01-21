@@ -7,7 +7,7 @@ div.container
       - flash.each do |_type, message|
         div.notification = message
 
-      = form_tag root_url, method: :get
+      = form_tag '/', method: :get
         div.control
           = label_tag :username, nil, class: 'label'
         div class='field has-addons'

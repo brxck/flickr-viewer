@@ -1,0 +1,19 @@
+h1 flickviewr
+
+- flash.each do |_type, message|
+  div = message
+
+= form_tag root_url, method: :get
+  div
+    = label_tag :username
+    = text_field_tag :username
+  div
+    = submit_tag "Get photos"
+
+- if @photostream
+  = link_to 'Photostream', FlickRaw.url_photostream(@photostream[0])
+  - @photostream.each do |photo|
+    div.photo
+      = image_tag FlickRaw.url_n(photo)
+
+

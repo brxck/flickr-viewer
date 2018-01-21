@@ -25,6 +25,8 @@ gem 'slim-rails'
 gem 'flickraw'
 # Configure environment variables
 gem 'figaro'
+# Use Bulma for a e s t h e t i c
+gem "bulma-rails", "~> 0.6.2"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
